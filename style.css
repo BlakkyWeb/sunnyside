@@ -1,0 +1,838 @@
+:root{
+    --SoftRed-: 7, 99%, 70%;
+    --Yellow-: 51, 100%, 49%;
+    --GraphicDesignText: 167, 40%, 24%;
+    --PhotographyText-: 198, 62%, 26%;
+    --Footer-: 178, 48%, 61%;
+    --VeryDarkDesaturatedBlue-: 212, 27%, 19%;
+    --VeryDarkGrayishBlue-: 213, 9%, 39%;
+    --DarkGrayishBlue-: 232, 10%, 55%;
+    --GrayishBlue-: 210, 4%, 67%;
+    --White-: 0, 0%, 100%;
+    --font1-: 'Barlow', sans-serif;
+    --font2-: 'Fraunces', serif;
+}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    width: 100%;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/desktop/image-header.jpg);
+    background-size: contain;
+    background-repeat:round;
+    color: hsl(var(--White-));
+}
+.logoNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 50px;
+}
+.logoNav > img:nth-child(3){
+    display: none;
+}
+.nav > a{
+    margin: 20px;
+    text-decoration: none;
+    color: hsl(var(--White-));
+    font-family: var(--font1-);
+    font-size: 14px;
+}
+.nav > button{
+    border: none;
+    color: black;
+    background-color: hsl(var(--White-));
+    margin-left: 20px;
+    border-radius: 20px;
+    font-family: var(--font2-);
+    height: 35px;
+    width: 100px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.headerb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.headerb > h1{
+    letter-spacing: 9px;
+    font-family: var(--font2-);
+    font-weight: 900px;
+    font-size: 40px;
+    margin: 0px auto;
+}
+.headerb > img{
+    margin-top: 40px
+}
+.Transform{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.Transform-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 110px;
+    width: 50%;
+}
+.Transform-text > h3{
+    max-width: 300px;
+    font-size: 32px;
+    font-family: var(--font2-);
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.Transform-text > p{
+    line-height: 25px;
+    max-width: 440px;
+    font-family: var(--font1-);
+    color: hsl(var(--DarkGrayishBlue-));
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.Transform-text > a{
+    font-weight: 900px;
+    text-decoration: none;
+    font-family: var(--font2-);
+    border-bottom: 4px solid hsl(var(--Yellow-));
+    color: black;
+    transition: all .3s ease-in-out;
+    border-radius: 4px;
+}
+.Transform-text > a:hover{
+    border-bottom: 4px solid yellow;
+}
+.Transform > img{
+    width: 50%;
+}
+
+.StandOut{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.StandOut-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 110px;
+    width: 50%;
+}
+.StandOut-text > h3{
+    max-width: 300px;
+    font-family: var(--font2-);
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.StandOut-text > p{
+    max-width: 430px;
+    line-height: 25px;
+    margin-bottom: 30px;
+    font-family: var(--font1-);
+    color: hsl(var(--DarkGrayishBlue-));
+    font-weight: 600;
+}
+.StandOut-text > a{
+    font-weight: 900px;
+    text-decoration: none;
+    border-bottom: 4px solid hsl(var(--SoftRed-));
+    font-family: var(--font2-);
+    color: black;
+    border-radius: 4px;
+    transition: all .3s ease-in-out;
+}
+.StandOut-text > a:hover{
+    border-bottom: 4px solid red;
+}
+.StandOut > img{
+    width: 50%;
+}
+
+.Float{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.Graphics{
+    width: 50%;
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: hsl(var(--GraphicDesignText));
+}
+.Graphics > h3{
+    margin-top: 400px;
+    margin-bottom: 20px;
+    font-family: var(--font2-);
+    font-weight: 900;
+    font-size: 28px;
+}
+.Graphics > p{
+    max-width: 330px;
+    text-align: center;
+    font-family: var(--font1-);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.Photo{
+    width: 50%;
+    height: 100%;
+    background-image: url(./images/desktop/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: hsl(var(--PhotographyText-));
+}
+.Photo > h3{
+    margin-top: 400px;
+    margin-bottom: 20px;
+    font-family: var(--font2-);
+    font-weight: 900;
+    font-size: 28px;
+}
+.Photo > p{
+    max-width: 320px;
+    text-align: center;
+    font-family: var(--font1-);
+    margin-bottom: 50px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.Testimony{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.Testimony > h5{
+    letter-spacing: 4px;
+    color: hsl(var(--GrayishBlue-));
+    font-family: var(--font2-);
+    font-weight: 900;
+}
+.TestiBod{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 100px;
+}
+.TestiBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.TestiBox > img{
+    border-radius: 50%;
+    width: 70px;
+    margin-bottom: 40px;
+}
+.TestiBox > p.lol{
+    text-align: center;
+    max-width: 290px;
+    font-family: var(--font1-);
+    margin-bottom: 20px;
+    color: hsl(var(--VeryDarkGrayishBlue-));
+    font-weight: 700;
+    font-size: 14px;
+}
+.TestiBox > h5{
+    font-family: var(--font2-);
+    font-size: 18px;
+    font-weight: 900;
+}
+.TestiBox > .small{
+    font-size: 12px;
+    font-family: var(--font1-);
+    margin-top: 5px;
+    font-weight: 600;
+    color: hsl(var(--GrayishBlue-));
+}
+.imageFooter{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+.top > picture{
+    width: 100%;
+}
+.imageFooter >.top > img{
+    width: 50%;
+}
+.imageFooter2{
+    display: none;
+}
+.textFooter{
+    height: 50vh;
+    color: hsl(var(--Footer-));
+    background-color: hsl(var(--Footer-));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+}
+.footerNav > a{
+    text-decoration: none;
+    color: hsl(168, 34%, 28%);
+    margin: 0px 10px;
+    font-family: var(--font1-);
+    font-weight: 600;
+    font-size: 12px;
+    transition: all .3s ease-in-out;
+}
+.footerNav > a:hover{
+    color: #fff;
+}
+.footerMed > img{
+    cursor: pointer;
+    margin: 10px;
+}
+
+
+
+@media (min-width: 321px) and (max-width: 375px) {
+    .container{
+        width: 100%;
+    }
+    .header{
+        background-image: url(./images/mobile/image-header.jpg);
+        background-repeat: round;
+        width: 100%;
+    }
+    .logoNav{
+        padding: 40px 20px;
+        position: relative;
+    }
+    .nav{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        color: grey;
+        padding: 0;
+        margin: 0px;
+        position: absolute;
+        top: 140px;
+        width: 88%;
+    }
+    .nav.view{
+        display: flex;
+    }
+    .triangle{
+        border-top: 30px solid transparent;
+        border-right: 30px solid #fff;
+        border-bottom: 30px solid transparent;
+        position: absolute;
+        top: 110px;
+        right: 25px;
+        display: none;
+    }
+    .triangle.visible{
+        display: block;
+    }
+    .nav > a{
+        color: grey;
+        font-weight: 600;
+        margin: 20px;
+    }
+    .nav > button{
+        margin: 0;
+        background: hsl(var(--Yellow-));
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    .logoNav > img:nth-child(3) {
+        display: block;
+        height: 30px;
+    }
+    .headerb > h1{
+        font-size: 32px;
+        text-align: center;
+        letter-spacing: 6px;
+        max-width: 90%;
+    }
+    .Transform{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .Transform-text{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .Transform-text > h3{
+        text-align: center;
+        margin-top: 40px;
+    }
+    .Transform > img{
+        width: 100%;
+    }
+    .Transform-text > p{
+        text-align: center;
+        max-width: 280px;
+    }
+    .Transform-text > a{
+        margin-bottom: 40px;
+    }
+
+    .StandOut{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .StandOut > img{
+        width: 100%;
+    }
+    .StandOut-text{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .StandOut-text > h3{
+        text-align: center;
+        margin-top: 40px;
+    }
+    .StandOut-text > p{
+        text-align: center;
+        max-width: 280px;
+    }
+    .StandOut-text > a{
+        margin-bottom: 40px;
+    }
+    .Float{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .Graphics{
+        width: 100%;
+        background-image: url(./images/mobile/image-graphic-design.jpg);
+        background-size: contain;
+        background-repeat: round;
+    }
+    .Photo{
+        width: 100%;
+        background-image: url(./images/mobile/image-photography.jpg);
+        background-size: contain;
+        background-repeat: round;
+    }
+    .Testimony{
+        height: fit-content;
+        margin: 50px 0;
+    }
+    .TestiBod{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .TestiBox > p.lol{
+        max-width: 95%;
+        line-height: 25px;
+    }
+    .imageFooter{
+        display: none;
+    }
+    .imageFooter2{
+        flex-direction: row;
+        display: flex;
+    }
+    .top{
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+    }
+    .imageFooter2 > .top > img{
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 320px) {
+    .container{
+        width: 100%;
+    }
+    .header{
+        background-image: url(./images/mobile/image-header.jpg);
+        background-repeat: round;
+        width: 100%;
+    }
+    .logoNav{
+        padding: 40px 20px;
+        position: relative;
+    }
+    .nav{
+        /* display: none; */
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        color: grey;
+        padding: 0;
+        margin: 0px;
+        position: absolute;
+        top: 140px;
+        width: 88%;
+    }
+    .nav.view{
+        display: flex;
+    }
+    .triangle{
+        border-top: 30px solid transparent;
+        border-right: 30px solid #fff;
+        border-bottom: 30px solid transparent;
+        position: absolute;
+        top: 110px;
+        right: 18px;
+        display: none;
+    }
+    .triangle.visible{
+        display: block;
+    }
+    .nav > a{
+        color: grey;
+        font-weight: 600;
+        margin: 20px;
+    }
+    .nav > button{
+        margin: 0;
+        background: hsl(var(--Yellow-));
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    .logoNav > img:nth-child(3) {
+        display: block;
+        height: 30px;
+    }
+    .headerb > h1{
+        font-size: 32px;
+        text-align: center;
+        letter-spacing: 6px;
+        max-width: 90%;
+    }
+    .Transform{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .Transform-text{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .Transform-text > h3{
+        text-align: center;
+        margin-top: 40px;
+    }
+    .Transform > img{
+        width: 100%;
+    }
+    .Transform-text > p{
+        text-align: center;
+        max-width: 280px;
+    }
+    .Transform-text > a{
+        margin-bottom: 40px;
+    }
+
+    .StandOut{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .StandOut > img{
+        width: 100%;
+    }
+    .StandOut-text{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .StandOut-text > h3{
+        text-align: center;
+        margin-top: 40px;
+    }
+    .StandOut-text > p{
+        text-align: center;
+        max-width: 280px;
+    }
+    .StandOut-text > a{
+        margin-bottom: 40px;
+    }
+    .Float{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .Graphics{
+        width: 100%;
+        background-image: url(./images/mobile/image-graphic-design.jpg);
+        background-size: contain;
+        background-repeat: round;
+    }
+    .Photo{
+        width: 100%;
+        background-image: url(./images/mobile/image-photography.jpg);
+        background-size: contain;
+        background-repeat: round;
+    }
+    .Testimony{
+        height: fit-content;
+        margin: 50px 0;
+    }
+    .TestiBod{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .TestiBox > p.lol{
+        max-width: 95%;
+        line-height: 25px;
+    }
+    .imageFooter{
+        display: none;
+    }
+    .imageFooter2{
+        flex-direction: row;
+        display: flex;
+    }
+    .top{
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+    }
+    .imageFooter2 > .top > img{
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 376px) and (max-width: 455px) {
+    .container{
+        width: 100%;
+    }
+    .header{
+        background-image: url(./images/mobile/image-header.jpg);
+        background-repeat: round;
+        width: 100%;
+    }
+    .logoNav{
+        padding: 40px 20px;
+        position: relative;
+    }
+    .nav{
+        /* display: none; */
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        color: grey;
+        padding: 0;
+        margin: 0px;
+        position: absolute;
+        top: 140px;
+        width: 90%;
+    }
+    .nav.view{
+        display: flex;
+    }
+    .triangle{
+        border-top: 30px solid transparent;
+        border-right: 30px solid #fff;
+        border-bottom: 30px solid transparent;
+        position: absolute;
+        top: 110px;
+        right: 22px;
+        display: none;
+    }
+    .triangle.visible{
+        display: block;
+    }
+    .nav > a{
+        color: grey;
+        font-weight: 600;
+        margin: 20px;
+    }
+    .nav > button{
+        margin: 0;
+        background: hsl(var(--Yellow-));
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    .logoNav > img:nth-child(3) {
+        display: block;
+        height: 30px;
+    }
+    .headerb > h1{
+        font-size: 32px;
+        text-align: center;
+        letter-spacing: 6px;
+        max-width: 90%;
+    }
+    .Transform{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .Transform-text{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .Transform-text > h3{
+        text-align: center;
+        margin-top: 40px;
+    }
+    .Transform > img{
+        width: 100%;
+    }
+    .Transform-text > p{
+        text-align: center;
+        max-width: 280px;
+    }
+    .Transform-text > a{
+        margin-bottom: 40px;
+    }
+
+    .StandOut{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .StandOut > img{
+        width: 100%;
+    }
+    .StandOut-text{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .StandOut-text > h3{
+        text-align: center;
+        margin-top: 40px;
+    }
+    .StandOut-text > p{
+        text-align: center;
+        max-width: 280px;
+    }
+    .StandOut-text > a{
+        margin-bottom: 40px;
+    }
+    .Float{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .Graphics{
+        width: 100%;
+        background-image: url(./images/mobile/image-graphic-design.jpg);
+        background-size: contain;
+        background-repeat: round;
+    }
+    .Photo{
+        width: 100%;
+        background-image: url(./images/mobile/image-photography.jpg);
+        background-size: contain;
+        background-repeat: round;
+    }
+    .Testimony{
+        height: fit-content;
+        margin: 50px 0;
+    }
+    .TestiBod{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .TestiBox > p.lol{
+        max-width: 95%;
+        line-height: 25px;
+    }
+    .imageFooter{
+        display: none;
+    }
+    .imageFooter2{
+        flex-direction: row;
+        display: flex;
+    }
+    .top{
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+    }
+    .imageFooter2 > .top > img{
+        width: 100%;
+    }
+}
+
